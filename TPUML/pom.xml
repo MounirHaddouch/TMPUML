@@ -10,4 +10,21 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
     </properties>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                        <rulesets>
+                                <ruleset>/rulesets/java/basic.xml</ruleset>
+                                <ruleset>/rulesets/java/imports.xml</ruleset>
+                                <ruleset>/rulesets/java/unusedcode.xml</ruleset>                                
+                                <ruleset>/rulesets/java/finalizers.xml</ruleset>
+                        </rulesets>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
