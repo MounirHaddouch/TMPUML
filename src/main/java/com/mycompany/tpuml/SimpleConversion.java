@@ -7,7 +7,7 @@ public class SimpleConversion extends Conversion {
 	}
 	
 	public double SimpleConv(){
-		return ((getSource().getFactor()*getAmount())/getTarget().getFactor());
+		return (getSource().getFactor()*getAmount())/getTarget().getFactor();
 	}
 }
 

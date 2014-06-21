@@ -47,15 +47,15 @@ public class TPUML {
 			System.out.println("4- Exit");
 			choice= sc.nextInt();
 			switch(choice){
-			case(1) : 
+                            case 1 : 
 				units_list.add(Unit.AddUnit());
 			break;
-			case(2) : 
+                            case 2 : 
 				System.out.println("Units presently registered :\n");
 			Unit.displayUnits(units_list);
 			System.out.println("\n");
 			break;
-			case(3) : 
+                            case 3 : 
 				System.out.println("Performing a conversion");
 			Scanner sc2 = new Scanner(System.in);
 			Integer SysChoice =0;
@@ -73,19 +73,19 @@ public class TPUML {
 			System.out.println("5- Temperature ");
 			SysChoice = sc2.nextInt();
 			switch(SysChoice){
-			case(1) : 
+                            case 1 : 
 				temp = UnitSystem.MetricSystem;
 			break;
-			case(2) : 
+                            case 2 : 
 				temp = UnitSystem.ImperialSystem;
 			break;
-			case(3) : 
+                            case 3 : 
 				temp = UnitSystem.MonetarySystem;
 			break;
-			case(4) : 
+                            case 4 : 
 				temp = UnitSystem.Time;
 			break;
-			case(5) : 
+                            case 5 : 
 				temp = UnitSystem.Temperature;
 			break;
 			}
@@ -120,19 +120,19 @@ public class TPUML {
 			System.out.println("5- Temperature ");
 			SysChoice = sc2.nextInt();
 			switch(SysChoice){
-			case(1) : 
+                            case 1 : 
 				temp = UnitSystem.MetricSystem;
 			break;
-			case(2) : 
+                            case 2 : 
 				temp = UnitSystem.ImperialSystem;
 			break;
-			case(3) : 
+                            case 3 : 
 				temp = UnitSystem.MonetarySystem;
 			break;
-			case(4) : 
+                            case 4 : 
 				temp = UnitSystem.Time;
 			break;
-			case(5) : 
+                            case 5 : 
 				temp = UnitSystem.Temperature;
 			break;
 			}
@@ -199,7 +199,7 @@ public class TPUML {
 			System.out.println(amt + " " + src.getName() + " = " + convRes + " " + tgt.getName());
 			break;
 
-			case(4) :
+                            case 4 :
 				System.out.println("Bye !");
 			exit = true;
 			break;

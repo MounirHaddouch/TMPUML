@@ -124,19 +124,19 @@ public class Unit {
 			System.out.println("5- Time");
 			type = sc.nextInt();
 			switch(type){
-			case (1):
+			case 1:
 				unitSystem = UnitSystem.MetricSystem;
 			break;
-			case (2):
+			case 2:
 				unitSystem = UnitSystem.ImperialSystem;
 			break;
-			case (3):
+			case 3:
 				unitSystem = UnitSystem.MonetarySystem;
 			break;
-			case (4):
+			case 4:
 				unitSystem = UnitSystem.Temperature;
 			break;
-			case (5):
+			case 5:
 				unitSystem = UnitSystem.Time;			
 			break;
 			default :
@@ -157,19 +157,19 @@ public class Unit {
 			System.out.println("5- Time"); 
 			type = sc.nextInt();				
 			switch(type){
-			case (1):
+			case 1:
 				unitType = UnitType.Length;
 			break;
-			case (2):
+			case 2:
 				unitType = UnitType.Mass;
 			break;
-			case (3):
+			case 3:
 				unitType = UnitType.Currency;
 			break;
-			case (4):
+			case 4:
 				unitType = UnitType.Temperature;
 			break;
-			case (5):
+			case 5:
 				unitType = UnitType.Time;				
 			break;
 			default :
@@ -189,7 +189,7 @@ public class Unit {
 			System.out.println("2- Complex (addition or 2 operations) \n");
 			conv = sc.nextInt();	
 			switch(conv){
-			case (1):
+			case 1:
 				factType = FactorType.Simple;
 			System.out.println("Enter the conversion factor relative to  reference Unit : \n");
 			if (unitType==UnitType.Length) System.out.println("( 1 " + title+" = how many meters ? )\n");
@@ -200,7 +200,7 @@ public class Unit {
 
 			factor = sc.nextDouble();
 			break;
-			case (2):
+			case 2:
 				factType = FactorType.Complex;
 			break;
 			default :
@@ -219,10 +219,10 @@ public class Unit {
 			System.out.println("2- No  \n");
 			ref = sc.nextInt();
 			switch(ref){
-			case (1):
+			case 1:
 				bool = true ;
 			break;
-			case (2):
+			case 2:
 				bool = false;
 			break;
 			default : 
